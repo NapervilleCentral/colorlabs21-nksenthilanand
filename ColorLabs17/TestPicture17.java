@@ -45,6 +45,8 @@ public class TestPicture17
      Picture snow2 = new Picture("images\\snowman.jpg");
      Picture snow3 = new Picture("images\\snowman.jpg");
      Picture snow4 = new Picture("images\\snowman.jpg");
+     Picture snow5 = new Picture("images\\snowman.jpg");
+     Picture snow6 = new Picture("images\\snowman.jpg");
      snow.explore();
      //changes color
      Pixel[] Spixels;
@@ -53,15 +55,15 @@ public class TestPicture17
      for (Pixel spot1: Spixels)
      {
          red = spot1.getRed();
-         red = (int)(red * 2);
+         red = (int)(red * .2);
          spot1.setRed(red);
          
          blue = spot1.getBlue();
-         blue = (int)(blue * 2);
+         blue = (int)(blue * 1.5);
          spot1.setBlue(blue);
          
          green = spot1.getGreen();
-         green = (int)(green * 2);
+         green = (int)(green * .7);
          spot1.setGreen(green);
      }
      snow1.explore();
@@ -89,13 +91,13 @@ public class TestPicture17
      for (Pixel spot1: Spixels)
      {
          red = spot1.getRed();
-         red = (int)(red * Math.random());
+         
          
          blue = spot1.getBlue();
-         blue = (int)(blue * Math.random());
+         
          
          green = spot1.getGreen();
-         green = (int)(green * Math.random());
+         
          
          avg = (red+blue+green) / 3;
          
@@ -105,8 +107,64 @@ public class TestPicture17
 
      }
      snow3.explore();
+     snow3.write("images/greySnow.jpg");
+     //darken photo
+     Spixels = snow4.getPixels();
+     for (Pixel spot1: Spixels)
+     {
+         red = spot1.getRed();
+         red = (int)(red * .30);
+         spot1.setRed(red);
+         
+         blue = spot1.getBlue();
+         blue = (int)(blue * .30);
+         spot1.setBlue(blue);
+         
+         green = spot1.getGreen();
+         green = (int)(green * .30);
+         spot1.setGreen(green);
+     }
+     snow4.explore();
+     
+     //change the colors
+     Spixels = snow5.getPixels();
+     for (Pixel spot1: Spixels)
+     {
+         red = spot1.getRed();
+         red = (int)(red +10);
+         spot1.setRed(red);
+         
+         blue = spot1.getBlue();
+         blue = (int)(blue -30);
+         spot1.setBlue(blue);
+         
+         green = spot1.getGreen();
+         green = (int)(green +100);
+         spot1.setGreen(green);
+     }
+     snow5.explore();
+     //colorifty the sky
+     Spixels = snow6.getPixels();
+     for (Pixel spot1: Spixels)
+     {
+         red = spot1.getRed();
+         spot1.setRed(red);
+         
+         blue = spot1.getBlue();
+         spot1.setBlue(blue);
+         
+         green = spot1.getGreen();
+         spot1.setGreen(green);
+         if (red == 75 && green == 123 && blue ==207)
+         {
+             spot1.setColor(new Color(145, 90, 230));  
+         }
+     }
+     snow6.explore();
      
      
+//this writes a copy of the pic!!!! RENAME THE PIC  
+//ferris1.write("images/SFTry1.jpg");     
      
      //to change color of pic get all the pixels
      //makes an array of pixels

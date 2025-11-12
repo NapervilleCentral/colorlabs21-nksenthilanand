@@ -25,21 +25,70 @@ public class SheparFaireyLab
          pictObj.explore();
          
          //relative path
-         Picture apic = new Picture("images\\beach.jpg");
+         //Picture apic = new Picture("images\\beach.jpg");
          //change with selfie picture
-         Picture me = new Picture("images/beach.jpg");
-         Picture me1 = new Picture("images/beach.jpg");
-         Picture me2 = new Picture("images/beach.jpg");
+         //Picture me = new Picture("images/beach.jpg");
+         Picture me = new Picture("images/sunset.jpg");
+         //Picture me2 = new Picture("images/sunset.jpg");
          
          /**
           * method 1 change
-          * 
           */
+         Pixel[] pixel;
+         pixel = me.getPixels();
+         int red = 0, blue, green, avg;
+         for (Pixel spot1: pixel)
+         {
+             red = spot1.getRed();
+             blue = spot1.getBlue();
+             green = spot1.getGreen();
+             avg = (red + blue + green ) / 3;
+             spot1.setColor(new Color(avg,avg,avg));
+             }
+         
+        for (Pixel spot1 : pixel)
+        {
+            red = spot1.getRed(); 
+            if (red <=62)
+                 spot1.setColor(new Color (7, 15, 168));
+             else if (red > 63 && red <=127)
+              spot1.setColor(new Color (207, 23, 6));
+             else if (red > 127 && red <=190)
+             spot1.setColor(new Color(32, 181, 245));
+             else
+             spot1.setColor(new Color(240, 243, 245));
+        }
+        //me.write("images/); 
+        me.explore();
+         
          
          /**
           * method 2 change
-          * 
           */
+          int prev =0 , big =0 , small=0;
+         for (Pixel spot1: pixel)
+         {
+             red = spot1.getRed();
+             blue = spot1.getBlue();
+             green = spot1.getGreen();
+             avg = (red + blue + green ) / 3;
+             
+             if (avg > big && avg > small)
+             avg = big;
+             else if (avg < small)
+             avg = small;
+         }
+         int range = 0, group1 = 0, group2 = 0,group3 = 0,group4 = 0;
+         for (Pixel spot1: pixel)
+         {
+             range = (big - small) / 4;
+             group1 = range;
+             group2 = range*2;
+             group3 = range*3;
+             group4 = range*4;
+             red = spot1.getRed();
+             
+         }
          
          /**
           * custom color palette

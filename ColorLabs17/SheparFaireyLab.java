@@ -29,7 +29,7 @@ public class SheparFaireyLab
          //change with selfie picture
          //Picture me = new Picture("images/beach.jpg");
          Picture me = new Picture("images/sunset.jpg");
-         //Picture me2 = new Picture("images/sunset.jpg");
+         Picture me2 = new Picture("images/sunset.jpg");
          
          /**
           * method 1 change
@@ -65,6 +65,7 @@ public class SheparFaireyLab
          /**
           * method 2 change
           */
+         pixel = me1.getPixels();
           int prev =0 , big =0 , small=0;
          for (Pixel spot1: pixel)
          {
@@ -92,10 +93,11 @@ public class SheparFaireyLab
              else
              spot1.setColor(new Color(240, 243, 245));
          }
-         
+         me2.explore();
          /**
           * custom color palette
           */
+         
 
          
     }//main       

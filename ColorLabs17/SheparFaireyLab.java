@@ -65,7 +65,7 @@ public class SheparFaireyLab
          /**
           * method 2 change
           */
-         pixel = me1.getPixels();
+         //pixel = me1.getPixels();
           int prev =0 , big =0 , small=0;
          for (Pixel spot1: pixel)
          {

@@ -78,16 +78,19 @@ public class SheparFaireyLab
              else if (avg < small)
              avg = small;
          }
-         int range = 0, group1 = 0, group2 = 0,group3 = 0,group4 = 0;
+         int range = 0;
          for (Pixel spot1: pixel)
          {
              range = (big - small) / 4;
-             group1 = range;
-             group2 = range*2;
-             group3 = range*3;
-             group4 = range*4;
              red = spot1.getRed();
-             
+             if (red <= range)
+                 spot1.setColor(new Color (7, 15, 168));
+             else if (red > range && red <=range*2)
+              spot1.setColor(new Color (207, 23, 6));
+             else if (red > range*2 && red <=range*3)
+             spot1.setColor(new Color(32, 181, 245));
+             else
+             spot1.setColor(new Color(240, 243, 245));
          }
          
          /**

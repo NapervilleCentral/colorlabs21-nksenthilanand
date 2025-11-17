@@ -27,10 +27,9 @@ public class SheparFaireyLab
          //relative path
          //Picture apic = new Picture("images\\beach.jpg");
          //change with selfie picture
-         Picture og = new Picture("images/hoco3.jpg");
-         Picture me = new Picture("images/hoco3.jpg");
-         Picture me1 = new Picture("images/hoco3.jpg");
-         Picture me2 = new Picture("images/hoco3.jpg");
+         Picture me = new Picture("images/hoco.jpg");
+         Picture me1 = new Picture("images/hoco.jpg");
+         Picture me2 = new Picture("images/hoco.jpg");
          /**
           * method 1 change
           */
@@ -65,6 +64,7 @@ public class SheparFaireyLab
          /**
           * method 2 change
           */
+         /*
          pixel = me1.getPixels();
           int prev =0 , big =0 , small=0;
          for (Pixel spot1: pixel)
@@ -132,10 +132,10 @@ public class SheparFaireyLab
          }
         me2.explore();
         me2.write("images/STtry1.jpg");
-        //too dark, the pink is nice, but make it more mellow, try to have more visbile contrast with the hair
+       
     
        //Try 2:
-        /*  
+        /**/  
          pixel = me2.getPixels();
          int prev =0 , big =0 , small=0;
          for (Pixel spot1: pixel)

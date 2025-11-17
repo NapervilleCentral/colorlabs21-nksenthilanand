@@ -2,7 +2,7 @@
 /**
  * Write a description of class SheparFaireyLab here.
  * 
- * @author (your name) 
+ * Nithela SenthilAnand
  * @version (a version number or a date)
  */
 import java.awt.*;

@@ -191,6 +191,39 @@ public class SheparFaireyLab
              range = (big - small) / 4;
              red = spot1.getRed();
              if (red <=range)
+                 spot1.setColor(new Color (20, 10, 120));
+             else if (red > range && red <=range*2)
+              spot1.setColor(new Color (169, 0, 17));
+             else if (red > range*2 && red <=range*3)
+             spot1.setColor(new Color(200, 81, 181));
+             else
+             spot1.setColor(new Color(230, 243, 245));
+         
+         
+        }//main 
+        me2.explore();
+        me2.write("images/STtry3.jpg");
+        /*
+        pixel = me2.getPixels();
+         int prev =0 , big =0 , small=0;
+         for (Pixel spot1: pixel)
+         {
+             red = spot1.getRed();
+             blue = spot1.getBlue();
+             green = spot1.getGreen();
+             avg = (red + blue + green ) / 3;
+             
+             if (avg > prev && avg > big )
+             big = avg;
+             else if (avg < small)
+             small = avg;
+         }
+         int range = 0;
+         for (Pixel spot1: pixel)
+         {
+             range = (big - small) / 4;
+             red = spot1.getRed();
+             if (red <=range)
                  spot1.setColor(new Color (23, 12, 131));
              else if (red > range && red <=range*2)
               spot1.setColor(new Color (133, 0, 112));
@@ -202,7 +235,8 @@ public class SheparFaireyLab
          
         }//main 
         me2.explore();
-        me2.write("images/STtry3.jpg");
+        me2.write("images/STFINAL.jpg");
+        /**/
 }
 }
 //class

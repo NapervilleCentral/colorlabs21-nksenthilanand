@@ -12,4 +12,5 @@ AUTHORS:
 USER INSTRUCTIONS:
 
 1) Jayanti - She said the salmon color was too bright and I needed a more contrast color. It was also hard to see the face and my teeth looked a little weird. The hair and dress also matched, so she said to try and change the color.
-2) My mom - She said that the color was good and it was easier to see our faces. The dress and hair had a clear contrast and it looked much better. 
+2) My sister- She said it was hard to see the face because the orange looked too much. She said to change it into a blue/purple theme. 
+3) My mom - She said that the color was good and it was easier to see our faces. The dress and hair had a clear contrast and it looked much better. 

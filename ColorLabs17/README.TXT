@@ -10,7 +10,12 @@ VERSION or DATE:
 HOW TO START THIS PROJECT:
 AUTHORS:
 USER INSTRUCTIONS:
-
-1) Jayanti - She said the salmon color was too bright and I needed a more contrast color. It was also hard to see the face and my teeth looked a little weird. The hair and dress also matched, so she said to try and change the color.
-2) My sister- She said it was hard to see the face because the orange looked too much. She said to change it into a blue/purple theme. 
-3) My mom - She said that the color was good and it was easier to see our faces. The dress and hair had a clear contrast and it looked much better, maybe change the red color. 
+For my collage project, I took my original image of the MLP characters 
+and made five different versions of it to create a six-tile grid.
+ First, I used a mirroring method to flip the image vertically. Then, I made a grayscale version 
+ by averaging the color values of every pixel to remove all the color. 
+ I also made a sepia version by first turning the photo gray and then 
+ tinting the pixels with yellowish-brown tones.
+ I used a blend method that mixed 50% of the original photo with 50% of the 
+ grayscale one to create a faded look. Finally, I did a recursive manipulation 
+ where the program calls itself to keep drawing smaller and smaller versions of the picture inside the middle of the frame.

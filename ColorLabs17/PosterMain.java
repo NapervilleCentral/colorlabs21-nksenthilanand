@@ -20,6 +20,7 @@ public class PosterMain
       /**/
      String fileName = FileChooser.pickAFile();
      Picture original = new Picture("images/mlp.jpg");
+     Picture other = new Picture("images/teamUmizoomi.jpg");
      int w = original.getWidth();
      int h = original.getHeight();
      Picture canvas = new Picture(w*3, w*2);
@@ -47,18 +48,14 @@ public class PosterMain
      
     //blend
     Picture mod5 = new Picture(original);
-    blend(mod5, mod2);
+    blend(mod5, other);
     copyToCanvas(mod5, canvas, w * 2, h);
-     //copyToCanvas(pCollage, acanvas);
-     //ferris1.explore(); // displays the picture
-     //moto.explore();
+     
      canvas.explore();
-     //A GIVEN - YOU HAVE TO DO THIS FOR EVERY IMAGE
-     //makes an array of pixels
-     Pixel[] pixels;
-     //gets pixels from picture and assigns to pixels array
-     //pixels = pCollage.getPixels();
-    canvas.write("images/mlpCanvas.jpg");
+   
+     //Pixel[] pixels;
+ 
+    canvas.write("images/mlpFINALCollage.jpg");
   }//main
  
   /**

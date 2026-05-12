@@ -16,6 +16,6 @@ and made five different versions of it to create a six-tile grid.
  by averaging the color values of every pixel to remove all the color. 
  I also made a sepia version by first turning the photo gray and then 
  tinting the pixels with yellowish-brown tones.
- I used a blend method that mixed 50% of the original photo with 50% of the 
- grayscale one to create a faded look. Finally, I did a recursive manipulation 
+ I used a blend method that mixed 50% of the original photo with 50% of 
+ another picture. Finally, I did a recursive manipulation 
  where the program calls itself to keep drawing smaller and smaller versions of the picture inside the middle of the frame.
